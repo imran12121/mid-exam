@@ -1,0 +1,21 @@
+echo "welcome to my recon project" 
+echo
+ echo
+ echo "please provide your domain for which reconnissance 
+willbe performed"
+ echo read d 
+echo echo "--first reconnisssance is IP resolution--"
+nslookup $d
+ echo
+ echo "--second reconnissance is 
+WHO-IS?--" whois $a -H  
+
+echo "please provide your domain for which reconnissance willbe performed"
+
+echo "--third reconnissance is THE-HARVESTER--"
+echo the Harvester -d $d -1 500 -b all -f recon.html 
+echo read d
+ 
+echo "--fourth reconnissance is sublist3r--" 
+sublist3r -d $d -o recon.txt
+
